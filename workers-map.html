@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Nearby Workers | Roshan Rozgaar</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', Arial, sans-serif;
+            background: #f8f8f5;
+            color: #26352e;
+        }
+
+        .nav {
+            padding: 18px 6%;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #26352e;
+            text-decoration: none;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #26352e;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 22px;
+        }
+
+        .map-box {
+            background: white;
+            padding: 12px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .workers-panel {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .workers-panel h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .worker-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .worker-item:last-child {
+            border-bottom: none;
+        }
+
+        .worker-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .worker-item p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .worker-distance {
+            color: #24834a;
+            font-weight: 700;
+        }
+
+        #map {
+            height: 550px;
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .map-note {
+            margin-top: 15px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media(max-width: 600px) {
+            h1 {
+                font-size: 23px;
+            }
+
+            #map {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="logo">Roshan Rozgaar</a>
+        <a href="index.html" class="back">← Back to Home</a>
+    </header>
+
+    <main class="container">
+
+        <h1>Nearby Available Workers</h1>
+        <p class="subtitle">
+            Find skilled professionals around your neighborhood.
+        </p>
+        <button id="myLocationBtn">
+            Show My Location
+        </button>
+        <div class="map-box">
+            <div id="map"></div>
+        </div>
+        <div class="workers-panel">
+            <h2>Nearby Professionals</h2>
+            <div id="workerList">
+                <p>Click "Show My Location" to find nearby workers.</p>
+            </div>
+        </div>
+
+        <p class="map-note">
+            Showing sample worker locations for demonstration.
+        </p>
+
+    </main>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="workers-map.js">
+        
+    </script>
+
+</body>
+
+</html>

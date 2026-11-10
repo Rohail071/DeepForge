@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roshan Rozgaar – Kaam ho khaas, hunar ho paas!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.500 3 7.500 7 9 4-1.500 7-4.500 7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.700 5.600 6.100.8-4.500 4.200 1.100 6.100L12 16.800 6.600 19.700l1.100-6.100L3.200 9.400l6.100-.8z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.800-8-10.500A4.500 4.500 0 0 1 12 7a4.500 4.500 0 0 1 8 2.500C20 15.200 12 20 12 20z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></symbol>
+  <symbol id="i-hammer" viewBox="0 0 24 24"><path d="m14 6 4 4M3 21l9-9M12 4l8 8-3 3-8-8z"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><path d="M18 3 9 12l3 3 9-9zM9 12c-3 0-5 2-5 5 0 2 1 3 3 3 3 0 5-2 5-5"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.500 6.500a4 4 0 0 0 5 5L9 22l-3-3zM14.500 6.500 17 4l3 3-2.500 2.500"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M4 10h16M9 3v4m6-4v4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo"><i><svg><use href="#i-tool"/></svg></i>Roshan Rozgaar</a>
+    <nav class="links">
+      <a href="#maahir">Maahir dhoondein</a>
+      <a href="#kaise">Kaise kaam karta hai</a>
+      <a href="#bharosa">Kyun Roshan Rozgaar</a>
+    </nav>
+    <div class="acts"><a href="login.html" >Login</a><a href="signup.html" class="btn-line" >Sign up</a></div>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="pill-badge"><b></b>TRUSTED HELP, RIGHT AROUND THE CORNER</div>
+    <h1><span>Kaam ho khaas, hunar ho paas!</span></h1>
+    <p class="hero-sub">Find trusted, skilled trade workers in your neighborhood. Real people, verified work, no runaround.</p>
+    <form class="search" id="searchForm">
+      <a href="workers-map.html">Nearby Workers</a>
+      <label class="q"><svg><use href="#i-search"/></svg><input id="q" type="search" placeholder="What do you need done?" aria-label="What do you need done?" autocomplete="off"></label>
+      <span class="sep"></span>
+      <label><svg><use href="#i-pin"/></svg>
+        <select id="city" aria-label="City"><option value="Islamabad">Islamabad</option><option value="Rawalpindi">Rawalpindi</option></select>
+      </label>
+      <button class="btn-coral" type="submit">Find local pros</button>
+    </form>
+    <div class="checks">
+      <span><svg><use href="#i-shield"/></svg>Background checked</span>
+      <span><svg><use href="#i-check"/></svg>License verified</span>
+      <span><svg><use href="#i-star"/></svg>Local reviews</span>
+    </div>
+  </div>
+  <div class="hero-art" id="heroArt">
+    <img id="heroImg" alt="" src="">
+    <div class="fc fc-top"><i><svg><use href="#i-check"/></svg></i><div><small>Jobs completed nearby</small><strong id="jobs">2,400+</strong></div></div>
+    <div class="fc fc-bot"><small>Average response</small><strong>12 min</strong></div>
+    <div class="feat" id="feat"></div>
+  </div>
+</section>
+
+<section class="pros" id="maahir">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow" id="around">AROUND ISLAMABAD</div><h2>Top-rated people nearby</h2></div>
+      <a href="#" class="all" data-toast="Sab maahir jald dikhaye jayenge">View all local pros <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="filters" id="filters">
+      <button class="chip" data-t="all" aria-pressed="true"><svg><use href="#i-tool"/></svg>All trades</button>
+      <button class="chip" data-t="Electrician" aria-pressed="false"><svg><use href="#i-zap"/></svg>Electricians</button>
+      <button class="chip" data-t="Plumber" aria-pressed="false"><svg><use href="#i-drop"/></svg>Plumbers</button>
+      <button class="chip" data-t="Carpenter" aria-pressed="false"><svg><use href="#i-hammer"/></svg>Carpenters</button>
+      <button class="chip" data-t="Painter" aria-pressed="false"><svg><use href="#i-brush"/></svg>Painters</button>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="how" id="kaise">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">EASY FROM THE START</div>
+      <h2>Kaam ki soch se, kaam ke anjaam tak.</h2>
+      <p class="lead">Na lambi forms, na uljhan. Apna kaam batayein, bharosemand hunarmand chunein aur kaam aage barhayein</p>
+    </div>
+    <div class="steps">
+      <div class="step"><i><svg><use href="#i-search"/></svg></i><span class="n">01</span><h3>Kaam batalye</h3><p>Chand zaroori baatein aur apna ilaqa likh dein.</p></div>
+      <div class="step"><i><svg><use href="#i-tool"/></svg></i><span class="n">02</span><h3>Sahi mahir chunein</h3><p>Apni zaroorat ke mutabiq maahir chunein — hunar, rates aur reviews dekh kar.</p></div>
+      <div class="step"><i><svg><use href="#i-cal"/></svg></i><span class="n">03</span><h3>Aasani se book karein</h3><p>Apni marzi ka waqt chunein aur seedha rabta rakhein</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="bharosa">
+  <div class="wrap">
+    <div class="shield"><svg><use href="#i-shield"/></svg></div>
+    <h2>Har kaam mein apnon jaisa bharosa.</h2>
+    <p>Har maahir ki pehchaan ki tasdeeq, zaroori licenses ki jaanch aur local customers ke reviews.</p>
+    <button class="blob" aria-label="Bharosa" data-toast="Shukriya! Hum har maahir ki jaanch karte hain"></button>
+  </div>
+</section>
+</main>
+
+<footer class="foot-bar">
+  <div class="wrap">
+    <a href="#top" class="logo"><i><svg><use href="#i-tool"/></svg></i>Roshan Rozgaar</a>
+    <span>Skilled hands for Islamabad &amp; Rawalpindi neighborhoods.</span>
+    <nav><a href="#">Safety</a><a href="#">Support</a><a href="#">Terms</a></nav>
+  </div>
+</footer>
+
+<dialog id="modal" aria-labelledby="mName"></dialog>
+<div class="toast" id="toast" role="status"><svg><use href="#i-check"/></svg><span></span></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

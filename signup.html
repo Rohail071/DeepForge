@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apna account banayein – Roshan Rozgaar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L9 22l-3-3zM14.5 6.5 17 4l3 3-2.5 2.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.2A9 9 0 0 1 12 5c6 0 10 7 10 7a17 17 0 0 1-3 3.6M6.4 6.9C3.7 8.7 2 12 2 12s4 7 10 7c1.5 0 2.900-.4 4-1"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+  <symbol id="i-glasses" viewBox="0 0 24 24"><circle cx="6" cy="14" r="3.500"/><circle cx="18" cy="14" r="3.500"/><path d="M9.500 14h5M2.500 14 4 7m17.500 7L20 7"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 10v1m6-1v1M9 15c1.500 1.500 4.500 1.500 6 0"/></symbol>
+  <symbol id="i-arms" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h2l2-2h6l2 2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.500"/></symbol>
+</svg>
+
+<div class="page">
+  <aside class="side">
+    <a href="index.html" class="logo"><i><svg><use href="#i-tool"/></svg></i>Roshan Rozgaar</a>
+    <div class="pitch">
+      <div class="eyebrow">HUNAR BHI, BHAROSA BHI</div>
+      <h2>Hunar ko kaam se milane wala apna platform.</h2>
+      <p>Apne shehar ke tasdeeq shuda maahireen se rabta karein aur kaam ko aasani se aage barhayein.</p>
+    </div>
+    <div class="trustline"><span><svg><use href="#i-shield"/></svg>Mehfooz pehchaan</span><span><svg><use href="#i-check"/></svg>Tasdeeq shuda maahir</span></div>
+  </aside>
+
+  <main class="main">
+
+    <a href="./index.html" class="close" aria-label="Go to homepage">
+    &times;
+</a>
+
+    <div class="box">
+      <div class="kicker">NAYA SAFAR SHURU KAREIN</div>
+      <h1>Apna account banayein</h1>
+      <p class="sub">Chand asaan qadam aur aap rozgaar ke naye mauqon ke qareeb hain.</p>
+
+      <div class="tabs" id="tabs" data-on="email" role="tablist">
+        <button class="tab" role="tab" id="tEmail" aria-selected="true">Email</button>
+        <button class="tab" role="tab" id="tFace" aria-selected="false"><svg id="lockIc"><use href="#i-lock"/></svg>Face Recognition</button>
+      </div>
+
+      <!-- EMAIL -->
+      <form class="panel" id="pEmail" novalidate>
+        <div class="field" id="fName"><label for="name">Poora naam</label>
+          <div class="inp"><input id="name" autocomplete="name" placeholder="Apna poora naam likhein"><svg class="st"><use href="#i-check"/></svg></div>
+          <div class="err"></div></div>
+        <div class="field" id="fMail"><label for="mail">Email ka pata</label>
+          <div class="inp"><input id="mail" type="email" inputmode="email" autocomplete="email" placeholder="naam@email.com"><svg class="st"><use href="#i-check"/></svg></div>
+          <div class="err"></div></div>
+        <div class="field" id="fPass"><label for="pass">Password</label>
+          <div class="inp"><input id="pass" type="password" autocomplete="new-password" placeholder="Apna password likhein">
+            <button type="button" class="eye" id="eye" aria-label="Password dikhayein"><svg><use href="#i-eye"/></svg></button></div>
+          <div class="meter" id="meter" data-s="0"><i></i><i></i><i></i><i></i><small></small></div>
+          <div class="err"></div></div>
+        <button class="btn btn-coral" id="go" type="submit">Sign up</button>
+        <p class="login">Pehle se account hai? <a href="login.html" id="lg">Login</a></p>
+      </form>
+
+      <!-- FACE -->
+      <section class="panel" id="pFace" hidden>
+        <div class="card">
+          <div class="stage" id="stage">
+            <div class="ring"><video id="vid" playsinline muted></video><div class="core"><svg><use href="#i-shield"/></svg></div>
+              <div class="avatar"><svg viewBox="0 0 100 100"><circle cx="50" cy="40" r="17"/><path d="M18 100c0-22 14-32 32-32s32 10 32 32z"/></svg></div></div>
+            <svg class="prog" viewBox="0 0 200 200"><circle cx="100" cy="100" r="100"/></svg>
+            <span class="br a"></span><span class="br b"></span><span class="br c"></span><span class="br d"></span>
+            <span class="sweep"></span><div class="done"><svg><use href="#i-check"/></svg></div>
+          </div>
+          <h3 id="fTitle">Apna chehra frame ke darmiyan rakhein</h3>
+          <p class="status" id="fStatus">Camera ki ijazat dein. Aapki tasveer sirf pehchaan ki tasdeeq ke liye istemal hogi.</p>
+          <div class="steps" id="steps" aria-hidden="true"><b></b><b></b><b></b></div>
+          <div class="tips" id="tips">
+            <div class="tip"><i><svg><use href="#i-sun"/></svg></i>Roshni aapke samne se ho</div>
+            <div class="tip"><i><svg><use href="#i-glasses"/></svg></i>Chashma ya topi utar dein</div>
+            <div class="tip"><i><svg><use href="#i-face"/></svg></i>Seedha camera mein dekhein</div>
+            <div class="tip"><i><svg><use href="#i-arms"/></svg></i>Mobile bazu ki doori par rakhein</div>
+          </div>
+          <button class="btn btn-dark" id="scan">Chehra scan karein</button>
+          <button class="btn btn-ghost" id="demo">Scan kaise hota hai? Demo dekhein</button>
+        </div>
+        <p class="login">Pehle se account hai? <a href="#" class="lg2">Login</a></p>
+      </section>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"><svg><use href="#i-check"/></svg><span></span></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="signup.js"></script>
+
+</body>
+</html>
